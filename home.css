@@ -1,0 +1,2429 @@
+html{
+    font-size: 16px;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*----For entire website------*/
+
+
+
+
+/*-----------All Round Gothic---------------*/
+@font-face {
+    font-family: 'All Round Gothic';
+    src: url('fonts/All-Round-Gothic/Fontspring-DEMO-allroundgothic-bold.otf');
+    src: url('fonts/All-Round-Gothic/Fontspring-DEMO-allroundgothic-bold.otf') format('otf');
+}
+
+/*------------End All Round Gothic-----------*/
+
+
+@font-face {
+    font-family: 'Noto Sans Japanese';
+    src: url('fonts/Noto_Sans_CJK_JP/NotoSansCJKjp-Regular.ttf');
+    src: url('fonts/Noto_Sans_CJK_JP/NotoSansCJKjp-Regular.ttf') format('truetype');
+}
+
+
+
+h1 {
+    font-family: 'Zen Maru Gothic';
+}
+
+p {
+    font-family: 'Zen Maru Gothic';
+}
+
+dl dt {
+    font-family: 'Noto Sans Japanese';
+    font-weight: 600;
+}
+
+dl dd {
+    font-family: 'Noto Sans Japanese';
+    font-weight: 400;
+}
+
+h2 {
+    font-family: 'Zen Maru Gothic';
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+
+/*---- End for entire webiste----*/
+
+/*------ Hero Section -------*/
+
+/*----presented----*/
+.hero .present {
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+}
+
+.hero .present img {
+    width: 12rem;
+    height: auto;
+}
+
+
+/*-------main-hero------*/
+.main-hero {
+    width: 100%;
+    position: relative;
+    background-image: url('assets/images/top-bg.png');
+    background-position: right center;
+    background-size: 73%;
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+}
+
+.main-hero .outer {
+    width: 100%;
+}
+
+.main-hero .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    height: 75vh;
+    z-index: -1;
+}
+
+.main-hero .wrapper .content {
+    display: flex;
+    justify-content: right;
+    width: 50%;
+}
+
+.main-hero .content .message {
+    height: 100px;
+}
+
+.main-hero .content .dialog svg {
+    position: absolute;
+    width: 400px;
+    top: 24%;
+    left: 10%;
+}
+
+.main-hero .dialog h1 {
+    font-size: 2.4em;
+    font-weight: 450;
+    letter-spacing: 3px;
+    margin: 0px;
+    text-shadow: #fff 1px 0 40px;
+}
+
+.main-hero .dialog h1 span {
+    color: #4488BC;
+    font-weight: bold;
+}
+
+.main-hero .wrapper .content .path-line .hero-path {
+    position: absolute;
+    bottom: -45px;
+    left: 0;
+    width: 610px;
+    z-index: -1;
+}
+
+.main-hero .wrapper .content .maru .f-maru {
+    position: absolute;
+    left: 30;
+    width: 10%;
+    bottom: -50px;
+}
+
+.main-hero .wrapper .content .maru .s-maru {
+    position: absolute;
+    left: 105px;
+    width: 5.5%;
+    bottom: -30px;
+}
+
+
+/*---------right-side---------*/
+
+.main-hero .wrapper .search {
+    width: 50%;
+}
+
+.main-hero .wrapper .search .home {
+    height: 100%;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.main-hero .wrapper .search .home .inside {
+    z-index: 10;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.main-hero .wrapper .search .home .inside::after {
+    content: "";
+    background-image: url("assets/images/home-icon.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    height: 70vh;
+    width: 57vh;
+    top: 20;
+    left: -30;
+    z-index: -1;
+}
+
+.main-hero .wrapper .search .search-button {
+    text-align: center;
+    position: relative;
+}
+
+.main-hero .wrapper .search .search-button .top {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.main-hero .wrapper .search .agent-search {
+    background-color: #4488BC;
+    color: #fff;
+    padding: 7px 10px;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: right;
+    margin: 0px;
+    letter-spacing: 5px;
+
+}
+
+.main-hero .wrapper .search .choose {
+    margin-top: 20px;
+    position: relative;
+
+}
+
+.main-hero .wrapper .search .choose .item {
+    margin-top: 10px;
+}
+
+.main-hero .wrapper .search .choose .item label {
+    color: #4488BC;
+    font-weight: bold;
+    margin-right: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-hero .wrapper .search .choose .item select {
+    margin: 5px 0px;
+    width: 140px;
+    height: 32px;
+    border: none;
+    background-color: #F1F1F1;
+    color: #4488BC;
+    cursor: pointer;
+}
+
+.main-hero .wrapper .search button {
+    padding: 7px 20px;
+    background-color: #F39B13;
+    border: none;
+    color: #fff;
+    margin-top: 20px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.main-hero .wrapper .search button:hover{
+    background-color: #fcb347;
+}
+
+.main-hero .wrapper .search button img {
+    width: 5px;
+    height: auto;
+}
+
+/*-------End Hero Section--------*/
+
+
+
+
+
+
+/*--------About-us------------*/
+.about-us {
+    padding: 70px 0px 60px;
+}
+
+.about-us .outer {
+    width: 100%;
+}
+
+.about-us .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("assets/images/about-us-bg.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 60%;
+}
+
+.about-us .wrapper .text {
+    width: 33%;
+}
+
+.about-us .wrapper .imgs {
+    width: 40%;
+}
+
+/*---left-image-side---*/
+
+.about-us .wrapper .item h2 {
+    font-size: 1.3em;
+    position: relative;
+    z-index: 99;
+    font-weight: 500;
+}
+
+.about-us .wrapper .item h2::after {
+    content: "About Us";
+    position: absolute;
+    z-index: -1;
+    left: -70;
+    font-size: 3.5em;
+    top: -45;
+    color: #4488BC;
+    opacity: 0.1;
+    font-family: 'All Round Gothic';
+}
+
+.about-us .wrapper .item p {
+    font-size: 0.8em;
+    line-height: 25px;
+}
+
+
+/*-------right-image-side-----*/
+.about-us .wrapper .item .images {
+    display: flex;
+    gap: 20;
+    justify-content: space-evenly;
+}
+
+.about-us .wrapper .item .images .fig {
+    width: 43%;
+    position: relative;
+}
+
+
+.about-us .wrapper .item .images .fig img {
+    width: 100%;
+}
+
+.about-us .wrapper .item .images .image1 {
+    position: absolute;
+    top: -60;
+}
+
+
+/*-------end about-us-------*/
+
+
+
+
+/*-------------Our Process--------*/
+
+.our-process {
+    background-image: url("assets/images/our-process-bg.svg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 85%;
+    padding: 50px 0px;
+    height: 43vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+.our-process .outer {
+    width: 912px;
+    display: flex;
+    justify-content: left;
+}
+
+
+
+.our-process .wrapper .head-title {
+    margin: 15px 0px;
+}
+
+.our-process .wrapper .head-title h2 {
+    position: relative;
+    color: #fff;
+}
+
+.our-process .wrapper .head-title h2::after {
+    content: "Our Process";
+    position: absolute;
+    z-index: 999 !important;
+    left: -70;
+    font-size: 3.5em;
+    top: -45;
+    color: #fff;
+    opacity: 0.1;
+    font-family: 'All Round Gothic';
+    font-weight: bolder;
+}
+
+.our-process .wrapper .wrapper-inside {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: relative;
+    width: 100%;
+    margin-top: 25px;
+}
+
+
+.our-process .wrapper-inside .items {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin-left: 40px;
+}
+
+.our-process .wrapper-inside .items .item {
+    background-color: #fff;
+    padding: 15px;
+    height: 150px;
+    width: 220px;
+    border-radius: 2px;
+}
+
+.our-process .wrapper-inside .items .count {
+    position: relative;
+    z-index: 100;
+    color: #4488BC;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+}
+
+.our-process .wrapper-inside .items .count::after {
+    position: absolute;
+    color: #4488BC;
+    font-size: 8em;
+    left: -10;
+    top: -45;
+    z-index: -1;
+    opacity: 0.1;
+
+}
+
+.our-process .wrapper-inside .items .count1::after {
+    content: "1";
+}
+
+.our-process .wrapper-inside .items .count2::after {
+    content: "2";
+}
+
+.our-process .wrapper-inside .items .count3::after {
+    content: "3";
+}
+
+.our-process .wrapper-inside .items .item .content {
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.our-process .wrapper-inside .item .text {
+    font-family: 'Noto Sans Japanese';
+    font-size: 0.8em;
+    font-weight: 400;
+    padding: 0 20px;
+}
+
+.our-process .wrapper-inside .item .text .title {
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.our-process .wrapper-inside .item .text span {
+    display: block;
+    margin-top: 8px;
+}
+
+.our-process .outer .path-line {
+    position: relative;
+}
+
+.our-process .outer .path-line svg {
+    position: absolute;
+    width: 45vh;
+    height: auto;
+    left: 0px;
+    top: -160px;
+    z-index: -1;
+    
+}
+
+/*-----------End Our Process-----------*/
+
+
+
+
+
+
+/*-----------------Our Services---------------*/
+.our-services {
+    position: relative;
+}
+
+.our-services .path-line svg {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    width: 21.5%;
+    height: auto;
+    z-index: -1;
+}
+
+.our-services .outer {
+    display: flex;
+    justify-content: center;
+    background-image: url("assets/images/our-services-bg.svg");
+    background-position: right center;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    padding: 70px 0px;
+}
+
+.our-services .wrapper {
+    width: 912px;
+}
+
+.our-services .head-title h2 {
+    color: #313131;
+    text-align: center;
+    position: relative;
+    padding-top: 40px;
+    margin: 10px;
+}
+
+.our-services .head-title h2::after {
+    content: "Our Services";
+    position: absolute;
+    z-index: 999 !important;
+    font-size: 3.5em;
+    color: #4588BB;
+    opacity: 0.1;
+    font-family: 'All Round Gothic';
+    left: 25%;
+    top: -10;
+}
+
+.our-services .service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: normal;
+}
+
+.our-services .service-list .item {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 33%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.our-services .service-list .item::after {
+    content: "";
+    height: 90px;
+    width: 0px;
+    border: #000000 1px solid;
+}
+
+.our-services .service-list .item-hr-border::before {
+    content: "";
+    height: 180px;
+    width: 0px;
+    position: absolute;
+    transform: rotate(90deg);
+    bottom: -90px;
+    right: 55%;
+    border: #000000 1px solid;
+}
+
+.our-services .service-list .item-3:after,
+.our-services .service-list .item-6:after {
+    height: 0px;
+    width: 0px;
+    border: none;
+}
+
+.our-services .service-list .item img {
+    width: 7vh;
+    padding: 5px;
+    margin: 5px;
+}
+
+.our-services .service-list .text {
+    width: 200px;
+}
+
+.our-services .service-list .text dl dt {
+    font-family: 'Noto Sans Japanese';
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #313131;
+}
+
+.our-services .service-list .text dl dd {
+    margin: 0px;
+    font-family: 'Noto Sans Japanese';
+    font-weight: 400;
+    color: #313131;
+    font-size: 0.69em;
+    margin-top: 10px;
+    text-wrap: balance;
+}
+
+/*-----------End Our Services----------*/
+
+
+
+
+
+/*----------- Our Plan----------*/
+.our-plan{
+    display: flex;
+    justify-content: center;
+    margin: 5rem auto;
+    position: relative;
+}
+
+
+.our-plan::after{
+    content:"";
+    position: absolute;
+    background-image: url("assets/images/our-process-bg.svg");
+    background-size: cover;
+    height: auto;
+    width: 55%;
+    object-fit: contain;
+    z-index: -1;
+    left: 0;
+    top: -3rem;
+    border-top-right-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+    padding: 11rem;
+}
+
+.our-plan .outer {
+    width: 912px;
+    max-width: 100%;
+    display: flex;
+    justify-content: left;
+}
+
+
+.our-plan .wrapper .head-title {
+    margin: 15px 0px;
+}
+
+.our-plan .wrapper .head-title h2 {
+    position: relative;
+    color: #fff;
+}
+
+.our-plan .wrapper .head-title h2::after {
+    content: "Plan";
+    position: absolute;
+    z-index: 999 !important;
+    left: -70;
+    font-size: 3.5em;
+    top: -45;
+    color: #fff;
+    opacity: 0.1;
+    font-family: 'All Round Gothic';
+    font-weight: bolder;
+}
+
+.our-plan table td{
+    width: 12.2rem;
+    height: 3.5rem;
+    text-align: center;
+    font-family: 'Noto Sans Japanese';
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 1px solid #4488BC;
+    color: #313131;
+    background-color:#fff;
+}
+
+.our-plan .plan-item .okane{
+    font-size: 1.1em;
+}
+
+.our-plan table .bor-top-left{
+    border-top-left-radius: 5px;
+}
+
+.our-plan table .bor-top-right {
+    border-top-right-radius: 5px;
+}
+
+.our-plan table .bor-bottom-left {
+    border-bottom-left-radius: 5px;
+}
+
+.our-plan table .bor-bottom-right {
+    border-bottom-right-radius: 5px;
+}
+
+.our-plan .plan-item p{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: right;
+}
+
+.our-plan .path-line{
+    position: relative;
+}
+
+
+.our-plan .path-line svg{
+    width: 45%;
+    height: auto;
+    max-width: 100%;
+    position: absolute;
+    bottom: -120px;
+    right: 20px;
+    z-index: 10;
+}
+
+/*-----------End Our Plan----------*/
+
+
+
+
+
+/*-----------Management----------*/
+.manage {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.manage .outer {
+    width: 900px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+.manage .head-title h2 {
+    color: #000000;
+    position: relative;
+}
+
+.manage .head-title h2:after {
+    content: "Management";
+    position: absolute;
+    z-index: 999 !important;
+    font-size: 3.5em;
+    color: #4588BB;
+    opacity: 0.1;
+    font-family: 'All Round Gothic';
+    left: -70;
+    top: -45;
+}
+
+.manage .manage-list {
+    margin-top: 30px;
+}
+
+.manage .manage-list ul {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-inline-start: 20px;
+}
+
+.manage .manage-list ul li {
+    list-style: none;
+    width: 32%;
+    box-sizing: border-box;
+    background-color: #F5F9FD;
+    background-image: url("assets/icon/management-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 4%);
+    background-size: 7px;
+    border: 1px solid #D3E4F4;
+    display: flex;
+    align-items: center;
+    font-family: 'Noto Sans Japanese';
+    font-size: 0.8em;
+    line-height: 20px;
+    font-weight: 400;
+    z-index: 99;
+    transition: 0.2s;
+}
+
+.manage .manage-list ul li:hover {
+    transform: translateY(-2px);
+    background-color: #fdfeff;
+}
+
+.manage .manage-list ul li:nth-child(-n+3){
+    font-weight: bolder;
+    font-size: 0.9em;
+}
+
+.manage .manage-list ul li a{
+    width: 100%;
+    height: -webkit-fill-available;
+    padding: 10px;
+    text-decoration: none;
+    color: #313131;
+    display: flex;
+    align-items: center;
+}
+
+.manage .manage-list ul li:after {
+    content: "";
+}
+
+.manage .manage-list ul li:nth-of-type(3n) {
+    margin-right: 0;
+}
+
+.manage .manage-list ul li:nth-of-type(3n+1) {
+    margin-left: 0;
+}
+
+.manage .outer .path-line svg {
+    position: absolute;
+    bottom: 60px;
+    left: -95px;
+    width: 386px;
+    z-index: 0;
+}
+
+/*----------end management----------*/
+
+
+
+
+
+/*-----------recent-articals----------*/
+.recent-artical {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+.recent-artical .outer {
+    width: 1020px;
+    margin: 80px;
+}
+
+.recent-artical .head-title h2 {
+    color: #000000;
+    position: relative;
+    margin-left: 60px;
+}
+
+.recent-artical .head-title h2:after {
+    content: "Recent Articles";
+    position: absolute;
+    z-index: 999 !important;
+    font-size: 3.5em;
+    color: #4588BB;
+    opacity: 0.1;
+    font-family: 'All Round Gothic';
+    left: -70;
+    top: -45;
+}
+
+.recent-artical .recent-artical-list {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.recent-artical .recent-artical-list .item {
+    box-sizing: border-box;
+    z-index: 99;
+}
+
+.recent-artical .recent-artical-list .item img {
+    width: 100%;
+}
+
+
+.recent-artical .recent-artical-list .item dl {
+    margin-top: 10px;
+}
+
+.recent-artical .recent-artical-list dl dt {
+    color: #005EB7;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.recent-artical .recent-artical-list dl dd {
+    margin: 0;
+    font-family: 'Noto Sans Japanese';
+    font-size: 0.85em;
+    margin-top: 5px;
+    font-weight: 400;
+}
+
+.recent-artical .outer .path-line svg {
+    position: absolute;
+}
+
+.recent-artical .outer .path-line .svg-1 {
+    top: -52px;
+    width: 382px;
+    left: -27px;
+}
+
+.recent-artical .outer .path-line .svg-2 {
+    top: -40;
+    width: 250px;
+    left: 35px;
+}
+
+.recent-artical .outer .path-line .svg-3 {
+    bottom: 0;
+    right: 20;
+    width: 250px;
+}
+
+/*--------End Recent-Artical---------*/
+
+
+
+
+/*--------Featured----------*/
+.featured {
+    display: flex;
+    justify-content: center;
+    background-color: #EBF3F8;
+}
+
+.featured .outer {
+    width: 1000px;
+    margin: 55px;
+}
+
+.featured .outer .head-title h2 {
+    color: #000000;
+    margin-left: 60px;
+    position: relative;
+}
+
+.featured .outer .head-title h2:after {
+    content: "Featured";
+    position: absolute;
+    z-index: 999 !important;
+    font-size: 3.5em;
+    color: #4588BB;
+    opacity: 0.1;
+    font-family: 'All Round Gothic';
+    left: -65px;
+    top: -45px;
+}
+
+.featured .featured-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin-top: 40px;
+}
+
+.featured .featured-list .item {
+    background-color: #fff;
+    transition: 0.2s;
+}
+
+.featured .featured-list .item:hover{
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+}
+
+.featured .featured-list .item a{
+    text-decoration: none;
+    color: #313131;
+}
+
+.featured .featured-list .image img {
+    width: 100%;
+}
+
+.featured .featured-list .text dl {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 2rem;
+}
+
+.featured .featured-list .text dl dt {
+    font-size: 1.1em;
+}
+
+.featured .featured-list .text dl dd {
+    font-size: 0.9em;
+    margin: 0px;
+
+}
+
+/*-----------End Featured---------*/
+
+
+
+/*-------------Footer------------*/
+footer {
+    background-color: #4588BB;
+    position: relative;
+    z-index: 1;
+}
+
+
+footer .outer {
+    display: flex;
+    justify-content: center;
+    z-index: 99;
+}
+
+footer .wrapper {
+    width: 1000px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    z-index: inherit;
+}
+
+footer .wrapper ul {
+    list-style: none;
+    padding-inline-start: 0px;
+    margin: 0px;
+    padding-top: 5px;
+}
+
+
+/*---logo-top----*/
+footer .top-logo {
+    display: flex;
+    gap: 30px;
+
+}
+
+footer .top-logo img {
+    width: 12rem;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+footer .top-logo .text p {
+    font-size: 0.8rem;
+    font-family: 'Noto Sans Japanese';
+    color: #fff;
+    margin: 0px;
+    padding-left: 2rem;
+}
+
+
+
+
+/*----footer-menu-----*/
+footer .menu ul {
+    display: flex;
+    justify-content: left;
+    gap: 3rem;
+    margin: 2rem 0px;
+}
+
+footer .menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Noto Sans Japanese';
+    transition: 0.2s;
+    font-weight: 600;
+}
+
+
+footer .menu ul li:hover > a{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: rgb(231, 209, 231);
+}
+
+
+
+
+/*------footer-copyright----*/
+footer .links {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .links .copyright {
+    font-family: 'Noto Sans Japanese';
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+/*--------Responsive---------*/
+
+
+
+
+
+
+
+
+/*----Larg screen------*/
+@media only screen and (min-width: 1400px) {
+    body {
+        font-size: 1.3em;
+    }
+
+
+    /*-------main-hero------*/
+    .main-hero .wrapper {
+        gap: 90px;
+        height: 75vh!important;
+    }
+
+    .main-hero .content .dialog svg {
+        width: 650px;
+        top: 25%;
+        left: 10%;
+    }
+
+    .main-hero .wrapper .content .path-line .hero-path {
+        bottom: -65px;
+        left: 0;
+        width: 50%;
+    }
+
+    .main-hero .wrapper .content .maru .f-maru {
+        position: absolute;
+        left: 30;
+        width: 10%;
+        bottom: -20px;
+    }
+
+    .main-hero .wrapper .content .maru .s-maru {
+        position: absolute;
+        left: 7%;
+        width: 5.5%;
+        bottom: -20px;
+    }
+
+
+    /*-----right-side------*/
+    .main-hero .wrapper .search .home .inside::after {
+        height: 70vh !important;
+        width: 41vh !important;
+        top: 20;
+        left: 8px;
+        z-index: -1;
+    }
+
+
+    .main-hero .wrapper .search .agent-search {
+        padding: 7px 30px;
+        font-size: 0.9em;
+
+    }
+
+    .main-hero .wrapper .search .choose {
+        margin-top: 30px;
+    }
+
+
+    .main-hero .wrapper .search .choose .item {
+        margin-top: 20px;
+    }
+
+    .main-hero .wrapper .search .choose .item select {
+        margin: 5px 0px;
+        width: 180px;
+        height: 36px;
+    }
+
+    .main-hero .wrapper .search button {
+        padding: 7px 20px;
+        font-size: 0.9em;
+    }
+
+    .main-hero .wrapper .search button img {
+        width: 10px;
+        height: auto;
+    }
+
+    /*-----End Hero-section------*/
+
+
+
+    /*------About us-----*/
+    .about-us .wrapper {
+        gap: 50px;
+    }
+
+    .about-us .wrapper .item h2::after {
+        left: -70px;
+        top: -60px;
+    }
+
+    .about-us .wrapper .item p {
+        font-size: 0.9em;
+        line-height: 35px;
+    }
+
+    /*-----End About Us-----*/
+
+
+
+
+
+    /*-------------Our Process--------*/
+    .our-process .outer {
+        width: 1400px;
+    }
+
+    .our-process .wrapper .head-title h2::after {
+        top: -60px;
+    }
+
+    .our-process .wrapper-inside .items .item {
+        padding: 15px;
+        height: 220px;
+        width: 350px;
+    }
+
+    .our-process .outer .path-line svg {
+        position: absolute;
+        width: 380px;
+        height: auto;
+        left: 55px;
+        top: -190px;
+        z-index: -1;
+    }
+
+    .our-process .wrapper .wrapper-inside {
+        margin-top: 50px;
+    }
+
+    /*-----End Our Process------*/
+
+
+
+
+
+
+    /*-----Our Services--------*/
+    .our-services .head-title h2::after {
+        top: -25px;
+    }
+
+    .our-services .path-line svg {
+        height: auto;
+        width: 20%;
+    }
+
+    .our-services .outer {
+        padding: 170px 0px;
+    }
+
+    .our-services .wrapper {
+        width: 1390px;
+    }
+
+    .our-services .service-list .text {
+        width: 300px;
+    }
+
+    .our-services .service-list .item img {
+        width: 6vh;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    /*------End Our-services-----*/
+
+
+    /*------ Our-Plan-----*/
+    .our-plan{
+        margin: 6rem auto;
+    }
+    .our-plan .outer{
+        width: 1400px;
+    }
+
+    .our-plan::after{
+        width: 65%;
+    }
+
+    .our-plan table td{
+        width: 18rem;
+    }
+
+    .our-plan .path-line svg{
+        bottom: -160px;
+    }
+
+
+
+    /*------End Our-Plan-----*/
+
+
+
+
+
+
+    /*------Management-------*/
+    .manage .outer {
+        width: 1390px;
+    }
+
+    .manage .head-title h2::after {
+        top: -60px;
+    }
+
+    .manage .outer .path-line svg {
+        width: 25%;
+    }
+
+    /*------End Management-------*/
+
+
+
+
+    /*-------Recent articals-------*/
+    .recent-artical .outer {
+        width: 1490px;
+        margin-top: 120px;
+    }
+
+    .recent-artical .head-title h2::after {
+        top: -60px;
+    }
+
+    .recent-artical .outer .path-line .svg-1 {
+        width: 26%;
+        left: 5px;
+        top: -43px;
+    }
+
+    .recent-artical .outer .path-line .svg-2 {
+        width: 16%;
+        left: 75px;
+        top: -13px;
+    }
+
+    .recent-artical .outer .path-line .svg-3 {
+        bottom: -8px;
+        right: 194px;
+        width: 19%;
+        z-index: -1;
+    }
+
+    /*------- End Recent Articles----------*/
+
+
+
+
+    /*--------Featured----------*/
+    .featured .outer {
+        width: 1500px;
+    }
+
+    .featured .outer .head-title h2::after {
+        top: -60px;
+    }
+
+    .featured .featured-list {
+        justify-content: left;
+    }
+
+    /*--------- End Featured---------*/
+
+
+
+
+    /*------- Footer--------*/
+    footer .wrapper {
+        width: 1490px;
+    }
+
+    footer .menu ul li a {
+        line-height: 35px;
+    }
+
+    footer .links {
+        margin-top: 50px;
+    }
+
+    /*--------- End Footer --------*/
+
+
+
+}
+
+
+@media screen and (min-width: 1280px) and (min-height: 720px) {
+
+    .main-hero .wrapper {
+        height: 64vh;
+        }
+
+    .main-hero .wrapper .search .home .inside::after {
+        height: 60vh;
+        width: 47vh;
+
+    }
+
+    .our-process{
+        height: 35vh;
+    }
+
+    .our-process .outer .path-line svg {
+        width: 38vh;
+    }
+
+    
+
+
+}
+
+
+@media screen and (min-width: 1024px) and (min-height: 780px) {
+    body{
+        font-size: 1em;
+    }
+    .main-hero .wrapper{
+        height: 45vh;
+    }
+}
+
+
+/*----tablate-----*/
+
+@media only screen and (max-width: 1023px) {
+    body {
+        font-size: 0.8em;
+    }
+
+    /*------------Main-hero-----------*/
+    .main-hero {
+        height: 40vh;
+        background-size: cover;
+    }
+
+    .main-hero .wrapper {
+        height: 40vh;
+        gap: 0px;
+    }
+
+    .main-hero .wrapper .content {
+        justify-content: center;
+        width: 45%;
+    }
+
+    .main-hero .content .dialog svg {
+        left: 0px;
+        width: 350px;
+    }
+
+    .main-hero .wrapper .search {
+        width: 55%;
+    }
+
+    .main-hero .wrapper .search .home {
+        width: 100%;
+    }
+
+    .main-hero .wrapper .search .home .inside::after {
+        height: 65%;
+        width: 100%;
+        top: 78px;
+        left: 3px;
+    }
+
+    .main-hero .wrapper .path-line svg {
+        display: none;
+    }
+
+    /*-------End Main-Heor---------*/
+
+
+
+
+
+
+    /*-----------About us-----------*/
+    .about-us .wrapper .text {
+        width: 45%;
+    }
+
+    .about-us .wrapper .item h2::after {
+        left: -35px;
+    }
+
+    /*----------End About Us-----------*/
+
+
+
+
+
+
+    /*-------Our Process-------*/
+    .our-process {
+        background-size: cover;
+        height: unset;
+        padding: 70px 0px;
+    }
+
+    .our-process .wrapper .head-title h2 {
+        margin-left: 80px;
+    }
+
+    .our-process .wrapper .head-title h2::after {
+        left: -48px;
+    }
+
+
+    .our-process .outer .path-line svg {
+        display: none;
+    }
+
+
+    .our-process .wrapper .wrapper-inside {
+        justify-content: center;
+        margin-top: 35px;
+    }
+
+
+    .our-process .wrapper-inside .items {
+        flex-wrap: wrap;
+        margin-left: unset;
+    }
+
+
+    .our-process .wrapper-inside .items .item {
+        width: 200px;
+
+    }
+
+
+    .our-process .outer {
+        display: block;
+    }
+
+    /*-----------End Our Process----------*/
+
+
+
+
+
+
+
+
+    /*----------- Our Services----------*/
+    .our-services .path-line svg {
+        display: none;
+    }
+
+    .our-services .outer {
+        background-size: cover;
+        padding: 40px 20px;
+    }
+
+
+    .our-services .service-list .item img {
+        width: 4vh;
+    }
+
+    .our-services .service-list {
+        margin-top: 30px;
+    }
+
+    .our-services .service-list .item::after {
+        height: 70px;
+    }
+
+    .our-services .service-list .item-hr-border::before {
+        right: 50%;
+    }
+
+    /*------------ End Our Services-----------*/
+
+
+
+
+
+
+    /*----------Our Plan--------*/
+    .our-plan{
+        margin: 3rem auto;
+    }
+    .our-plan::after{
+        border-radius: 0;
+    }
+
+    .our-plan .path-line{
+        display: none;
+    }
+
+    .our-plan .head-title h2{
+        margin-left: 80px;
+    }
+
+    .our-plan .wrapper .head-title h2::after{
+        left: -48px;
+    }
+
+
+    .our-plan table td{
+        width:12rem
+    }
+
+    .our-plan .plan-item p{
+        text-align: center;
+    }
+
+
+
+
+
+    /*----------End Our Plan--------*/
+
+
+
+
+
+    /*------------ Management-----------*/
+    .manage .head-title h2 {
+        margin-left: 80px;
+    }
+
+    .manage .head-title h2::after {
+        left: -48px;
+    }
+
+    .manage .manage-list ul {
+        justify-content: normal;
+    }
+
+
+
+    .manage .outer .path-line svg {
+        display: none;
+    }
+
+    /*------------ End Management------------*/
+
+
+
+
+
+
+
+    /*--------Recent-articals-----------*/
+    .recent-artical .outer {
+        margin: 60px 0px 30px 0px;
+    }
+
+    .recent-artical .head-title h2 {
+        margin-left: 80px;
+    }
+
+    .recent-artical .head-title h2::after {
+        left: -48px;
+    }
+
+    .recent-artical .recent-artical-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .recent-artical .recent-artical-list dl dt {
+        font-size: 0.9em;
+    }
+
+    .recent-artical .recent-artical-list dl dd {
+        font-size: 1em;
+    }
+
+    .recent-artical .recent-artical-list .item {
+        width: 45%
+    }
+
+    .recent-artical .outer .path-line svg {
+        display: none;
+    }
+
+    /*----------End Recent Articals---------*/
+
+
+
+
+
+    /*-----------Featured------------*/
+    .featured .featured-list {
+        gap: 30px;
+    }
+
+    .featured .outer .head-title h2 {
+        margin-left: 40px;
+    }
+
+    .featured .featured-list .text dl {
+        justify-content: space-evenly;
+        padding: unset;
+    }
+
+    .featured .featured-list .text dl dd {
+        margin-inline-start: 0px;
+    }
+
+    /*-----------End Featured---------*/
+
+
+
+    /*------------Footer---------------*/
+    footer {
+        padding: 40px;
+    }
+
+    footer .wrapper {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    footer .menu {
+        flex-wrap: wrap;
+        padding: unset;
+    }
+
+    footer .menu .menu-list {
+        width: 45%;
+
+    }
+
+
+    /*-------------End Footer------------*/
+
+}
+
+
+/*-----Mobile-----*/
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 0.8rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+
+
+    /*----presented by-----*/
+    .hero .present img{
+        width: 9rem;
+    }
+    /*----End Presented by-----*/
+
+
+
+    /*------Main-hero-------*/
+    .main-hero {
+        background-size: cover;
+        height: 76vh;
+    }
+
+    .main-hero .wrapper {
+        display: block;
+    }
+
+    .main-hero .path-line svg,
+    .main-hero .maru svg {
+        display: none;
+    }
+
+    .main-hero .wrapper .content {
+        width: 100%;
+        display: block;
+    }
+
+    .main-hero .content .message {
+        height: 100px;
+    }
+
+    .main-hero .content .dialog svg {
+        position: absolute;
+        width: 85%;
+        top: 15px;
+        left: 0;
+    }
+
+    .main-hero .content .dialog h1 {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+
+
+    .main-hero .wrapper .search {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .main-hero .wrapper .search .home {
+        width: 100%;
+        height: 54vh;
+    }
+
+    .main-hero .wrapper .search .home .inside {
+        margin-top: -35px;
+    }
+
+    .main-hero .wrapper .search .home .inside::after {
+        height: 80%;
+        width: 84%;
+        top: 0;
+        left: 8%;
+        right: auto;
+    }
+
+    .main-hero .wrapper .search .choose {
+        margin-top: 0px;
+    }
+
+    .main-hero .wrapper .search button {
+        margin-top: 10px;
+    }
+
+    /*------------End Main-Hero Section--------*/
+
+
+
+
+
+    /*----------About us----------*/
+    .about-us .wrapper {
+        display: block;
+        background-size: 1026px 1000px;
+        background-position: top;
+        padding-bottom: 20px;
+    }
+
+    .about-us .wrapper .text,
+    .about-us .wrapper .imgs {
+        width: 100%;
+    }
+
+    .about-us .wrapper .text {
+        margin-bottom: 70px;
+    }
+
+    .about-us .wrapper .item h2 {
+        text-align: center;
+    }
+
+    .about-us .wrapper .item h2::after {
+        left: unset;
+        top: -40px;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .about-us .wrapper .item p {
+        font-size: 1em;
+        padding: 20px;
+        text-wrap: normal;
+    }
+
+    /*----------End About us---------*/
+
+
+
+
+    /*---------Our Process--------*/
+    .our-process {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+    }
+
+    .our-process .outer {
+        margin-top: 30px;
+    }
+
+    .our-process .wrapper .head-title h2 {
+        text-align: center;
+        margin-left: unset;
+    }
+
+    .our-process .wrapper .head-title h2::after {
+        left: unset;
+        display: block;
+        text-align: center;
+        width: 100%;
+
+    }
+
+    .our-process .outer {
+        display: block;
+        width: 100%;
+    }
+
+    .our-process .wrapper .wrapper-inside {
+        display: block;
+        margin-top: 30px;
+    }
+
+    .our-process .wrapper .wrapper-inside .items {
+        display: block;
+        margin-left: unset;
+    }
+
+    .our-process .wrapper .wrapper-inside .items .item {
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        margin-top: 10px;
+    }
+
+    .our-process .wrapper-inside .item .text {
+        font-size: 1em;
+    }
+
+    .our-process .outer .path-line svg {
+        display: none;
+    }
+
+    /*---------End Our Process------*/
+
+
+
+
+
+
+    /*---------- Our Services-----*/
+    .our-services .outer {
+        background-size: cover;
+        padding: 50px 0px;
+    }
+
+    .our-services .wrapper {
+        width: 100%;
+    }
+
+    .our-services .head-title h2 {
+        text-align: center;
+    }
+
+    .our-services .head-title h2::after {
+        display: block;
+        width: 100%;
+        text-align: center;
+        left: unset;
+        font-size: 3.2em;
+        top: 0px;
+    }
+
+    .our-services .path-line svg {
+        display: none;
+    }
+
+    .our-services .service-list {
+        display: block;
+        margin-top: 40px;
+
+
+    }
+
+    .our-services .service-list .item {
+        width: 100%;
+
+    }
+
+    .our-services .service-list .text {
+        width: 60%;
+    }
+
+    .our-services .service-list .item img{
+        width: 6vh;
+    }
+
+    .our-services .service-list .text dl dt {
+        font-size: 1.3em;
+    }
+
+    .our-services .service-list .text dl dd {
+        font-size: 1em;
+    }
+
+
+    .our-services .service-list .item::after,
+    .our-services .service-list .item-hr-border::before,
+    .our-services .service-list .item-3::after,
+    .our-services .service-list .item-6:after {
+        display: none;
+    }
+
+
+    .our-services .service-list .item {
+        border-bottom: 1px solid #fff;
+    }
+
+    .our-services .service-list .item-6 {
+        border-bottom: none;
+    }
+
+    /*---------End Our Services------*/
+
+
+
+
+
+    /*----------Our Plan--------*/
+    .our-plan{
+        margin: 3rem auto;
+    }
+    .our-plan::after{
+        width: 100%;
+        padding: 12rem 0;
+        border-radius: 0;
+    }
+    .our-plan .outer{
+        width: 100%;
+    }
+
+    .our-plan .head-title h2{
+        text-align: center;
+    }
+
+    .our-plan .wrapper .head-title h2::after{
+        left: 0px;
+        right: 0px;
+    }
+
+    .our-plan .plan-item{
+        margin-top: 30px;
+    }
+
+    .our-plan table td{
+        font-size: 0.7rem;
+    }
+
+    .our-plan .plan-item .okane{
+        font-size: 0.8em;
+    }
+
+    .our-plan .plan-item p{
+        text-align: center;
+        padding: 5px;
+    }
+
+    .our-plan .path-line{
+        display: none;
+    }
+
+    .our-plan table .bor-top-left,
+    .our-plan table .bor-top-right,
+    .our-plan table .bor-bottom-left,
+    .our-plan table .bor-bottom-right{
+        border-radius: 0;
+    }
+
+
+    /*---------End Our Plan------*/
+
+
+
+
+
+
+
+
+
+
+
+
+    /*-------Management-------*/
+    .manage {
+        display: block;
+    }
+
+    .manage .outer {
+        width: 100%;
+        margin-top: 100px;
+    }
+
+
+    .manage .head-title h2 {
+        text-align: center;
+        margin-left: unset;
+    }
+
+    .manage .head-title h2::after {
+        display: block;
+        width: 100%;
+        text-align: center;
+        left: unset;
+        font-size: 3.2em;
+    }
+
+    .manage .manage-list {
+        margin-top: 40px;
+        display: block;
+    }
+
+    .manage .manage-list ul {
+        padding-inline-start: unset;
+        justify-content: center;
+        display: block;
+    }
+
+    .manage .manage-list ul li {
+        width: 90%;
+        height: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        font-size: 1em;
+    }
+
+
+    .manage .manage-list ul li:nth-of-type(3n) {
+        margin-right: auto;
+    }
+
+    .manage .manage-list ul li:nth-of-type(3n+1) {
+        margin-left: auto;
+    }
+
+
+    .manage .outer .path-line svg {
+        display: none;
+    }
+
+    /*---------End Management---------*/
+
+
+
+
+    /*--------Recent Articles---------*/
+    .recent-artical {
+        background-position: bottom;
+        background-size: cover;
+    }
+
+    .recent-artical .path-line svg {
+        display: none;
+    }
+
+    .recent-artical .outer {
+        width: 100%;
+        margin: 80px 0px;
+    }
+
+    .recent-artical .head-title h2 {
+        margin-left: unset;
+        text-align: center;
+    }
+
+    .recent-artical .head-title h2::after {
+        display: block;
+        width: 100%;
+        text-align: center;
+        left: unset;
+        font-size: 3.2em;
+        top: -50px;
+    }
+
+
+    .recent-artical .recent-artical-list {
+        margin-top: 80px;
+        display: block;
+    }
+
+    .recent-artical .recent-artical-list .item {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .recent-artical .recent-artical-list dl dt {
+        font-size: 1em;
+    }
+
+    .recent-artical .recent-artical-list dl dd {
+        font-size: 1.2em;
+    }
+
+    /*--------End Recent Articles-------*/
+
+
+
+
+
+
+    /*----------Featured-----------*/
+    .featured .outer {
+        width: 100%;
+        margin: 80px 0px 10px 0px;
+    }
+
+    .featured .outer .head-title h2 {
+        text-align: center;
+        margin-left: unset;
+    }
+
+    .featured .outer .head-title h2::after {
+        display: block;
+        width: 100%;
+        text-align: center;
+        left: unset;
+    }
+
+
+    .featured .featured-list {
+        display: block;
+        margin: 40px 20px;
+    }
+
+
+
+    .featured .featured-list .text dl {
+        margin: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    .featured .featured-list .text dl dt {
+        text-wrap: nowrap;
+    }
+
+
+
+    .featured .featured-list .item {
+        margin-top: 20px;
+    }
+
+    /*----------End Featured-----------*/
+
+
+
+
+
+    /*-------Footer----------*/
+    footer{
+        padding: 20px;
+    }
+    footer .wrapper {
+        width: 100%;
+        margin: 20px 0px 15px 0px;
+    }
+
+    footer .top-logo {
+        display: block;
+        text-align: center;
+    }
+
+    footer .top-logo img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    footer .top-logo .text{
+        margin-top: 20px;
+    }
+
+    footer .top-logo .text p {
+        font-size: 1.1em;
+        padding-left: unset;
+        text-align: justify;
+    }
+
+    .br-hide-ph{
+        display: none;
+    }
+
+    footer .menu ul{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+
+
+
+
+    /*-----------End Footer--------*/
+
+}
+
+
+@media only screen and (max-width: 431px) {
+    body{
+        font-size: 0.9em;
+    }
+
+    /*--------main-hero------*/
+
+    .main-hero{
+        height: 60vh;
+    }
+
+    .main-hero .wrapper .search{
+        margin-top: 0px;
+    }
+
+    .main-hero .content .dialog h1{
+        margin-top: 30px;
+    }
+
+    .main-hero .wrapper .search .home{
+        height: 44vh;
+    }
+
+    .main-hero .wrapper .search .home .inside::after{
+        width: 74%;
+        left: 13.5%;
+    }
+
+    .main-hero .wrapper .search .choose{
+        margin-top: 20px;
+    }
+
+    /*-------End Main Hero-----*/
+
+
+
+
+    /*------- About Us-----------*/
+
+    .about-us .wrapper{
+        background-size: 800px 1020px;
+    }
+
+    /*------------End About Us--------*/
+
+
+
+
+    /*--------Our processs---------*/
+
+    .our-process{
+        height: auto;
+    }
+
+    .our-process .wrapper-inside .item .text {
+        font-size: 1em;
+        margin-left: 10px;
+    }
+
+    .our-process .wrapper .wrapper-inside {
+        margin-top: 40px;
+    }
+
+    .our-process .wrapper .wrapper-inside .items .item {
+        width: 80%;
+    }
+
+    .our-process .wrapper-inside .items .item .content {
+        padding:0px;
+    }
+
+    .our-process .wrapper-inside .items .count::after {
+        font-size: 9em;
+        font-weight: bolder;
+    }
+
+
+
+
+
+
+
+
+    /*--------End Our Processs------*/
+
+
+}
+
+
+@media only screen and (max-width: 376px){
+    .main-hero {
+        height: 76vh;;
+    }
+
+    .main-hero .wrapper .search {
+        margin-top: 0px;
+    }
+
+    .main-hero .content .dialog h1 {
+        margin-top: 30px;
+    }
+
+    .main-hero .wrapper .search .home {
+        height: 54vh;
+    }
+
+    .main-hero .wrapper .search .home .inside::after {
+        width: 84%;
+        left: 8%;
+    }
+
+    .main-hero .wrapper .search .choose {
+        margin-top: 20px;
+    }
+
+    /*-------End Main Hero-----*/
+}
+
