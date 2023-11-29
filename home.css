@@ -2316,11 +2316,11 @@ footer .links .copyright {
 
     footer .top-logo {
         display: block;
-        text-align: center;
+        text-align: left;
     }
 
     footer .top-logo img {
-        width: 100%;
+        width: 55%;
         margin-bottom: 10px;
     }
 
@@ -2329,7 +2329,6 @@ footer .links .copyright {
     }
 
     footer .top-logo .text p {
-        font-size: 1.1em;
         padding-left: unset;
         text-align: justify;
     }
