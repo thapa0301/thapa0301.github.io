@@ -201,6 +201,8 @@ main.financial{
     font-family:游ゴシック;
 }
 
+/* ------ First graph axis name ------- */
+
 .f-matrix .row:nth-child(1)::after{
     content: "金利 \A(高)";
     left: 50%;
@@ -228,6 +230,8 @@ main.financial{
     right: -40px;
     transform: translateY(-50%);
 }
+
+/* ------End First graph axis name */
 
 .f-matrix .row .column{
     height: 12rem;
@@ -257,7 +261,6 @@ main.financial{
 
 .f-matrix .row .column .q2{
     position: absolute;
-    right: -60px;
 }
 
 .f-matrix .row .column .b0{
@@ -267,15 +270,17 @@ main.financial{
 
 .f-matrix .row .column .b1{
     top: 0px;
-    right: -85px;
+    right: -95px;
 }
 
 .f-matrix .row .column .b2 {
     top: 50px;
+    right: -70px;
 }
 
 .f-matrix .row .column .b3 {
     top: 120px;
+    right: -70px;
 }
 
 .f-matrix .row .column .bt4 {
@@ -309,8 +314,38 @@ main.financial{
 
 
 
+/*------ second graph axis name----- */
+.chart .item:nth-child(2) .f-matrix .row:nth-child(1)::after {
+    content: "金利 \A(高)";
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30px;
+}
 
-/*------ End Financial f-matrix------ */
+.chart .item:nth-child(2) .f-matrix .row:nth-child(2)::after {
+    content: "金利 \A（低）";
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30px;
+}
+
+.chart .item:nth-child(2) .f-matrix .row:nth-child(3)::after {
+    content: "LTV \A（低）";
+    top: 50%;
+    left: -40px;
+    transform: translateY(-50%);
+}
+
+.chart .item:nth-child(2) .f-matrix .row:nth-child(4)::after {
+    content: "LTV \A(高)";
+    top: 50%;
+    right: -40px;
+    transform: translateY(-50%);
+}
+
+
+
+/*------ End Financial f-matrix axis name------ */
 
 
 
