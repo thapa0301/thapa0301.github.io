@@ -7,10 +7,6 @@ body{
     padding: 3px;
 }
 
-h2,ul li,
-.f-matrix .row::after{
-    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
-}
 
 /* -----Flow------ */
 .wrapper-flow{
@@ -23,6 +19,10 @@ h2,ul li,
 .flow {
     width: 100%;
     
+}
+
+.flow h2{
+    font-family: 游ゴシック;
 }
 
 .flow ul {
@@ -63,12 +63,13 @@ h2,ul li,
 .lead-flow ul li {
     position: relative;
     width: 100%;
-    font-size: 9px;
+    font-size: 10px;
     color: #fff;
     line-height: 1.6rem;
     font-weight: 500;
     padding-right: 30px;
     text-align: center;
+    font-family: 游ゴシック 本文;
 }
 
 .lead-flow ul li::after {
@@ -89,7 +90,6 @@ h2,ul li,
 .work-flow ul{
     margin-left: -12px;
 }
-
 .work-flow ul li {
     position: relative;
     width: 100%;
@@ -99,6 +99,7 @@ h2,ul li,
     text-align: center;
     padding-right: 15px;
     line-height: 1rem;
+    font-family: 游ゴシック 本文;
 }
 
 .work-flow ul li::after {
@@ -128,7 +129,7 @@ h2,ul li,
 
 main.financial{
     margin:10rem auto;
-    width: 1080px;
+    width: 1150px;
 }
 
 .bnk-name ul{
@@ -150,7 +151,9 @@ main.financial{
 }
 
 .chart h2{
-    font-size: 1em;
+    font-size: 16px;
+    margin: 0;
+    font-family: 游ゴシック;
 }
 
 
@@ -166,6 +169,7 @@ main.financial{
     position: absolute;
     height: 1px;
     width: 100%;
+    background: #fff;
     border-top: 1px solid #000;
     top: 50%;
     transform: translateY(-50%);
@@ -174,12 +178,13 @@ main.financial{
 .f-matrix::after {
     content: "";
     position: absolute;
-    height: 100%;
+    height: 90%;
     width: 1px;
-    background: #000;
+    background: #fff;
+    border-left: 1px solid #000;
     top: 50%;
     left: 50%;
-    transform: translateY(-50%);
+    transform: translate(-50%,-50%);
 }
 
 .f-matrix .row{
@@ -192,34 +197,35 @@ main.financial{
 .f-matrix .row::after{
     position: absolute;
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 11px;
+    font-family:游ゴシック;
 }
 
 .f-matrix .row:nth-child(1)::after{
     content: "金利 \A(高)";
     left: 50%;
     transform: translateX(-50%);
-    top: -60px;
+    top: -30px;
 }
 
 .f-matrix .row:nth-child(2)::after {
     content: "金利 \A（低）";
     left: 50%;
     transform: translateX(-50%);
-    bottom: -60px;
+    bottom: -30px;
 }
 
 .f-matrix .row:nth-child(3)::after {
     content: "LTV \A（低）";
     top: 50%;
-    left: -60px;
+    left: -40px;
     transform: translateY(-50%);
 }
 
 .f-matrix .row:nth-child(4)::after {
     content: "LTV \A(高)";
     top: 50%;
-    right: -60px;
+    right: -40px;
     transform: translateY(-50%);
 }
 
@@ -235,6 +241,8 @@ main.financial{
 .bnk-name ul li{
     list-style: none;  
     font-size: 11px;
+    font-family: 游ゴシック 本文;
+    
 }
 
 .f-matrix .row .column ul li>span{
@@ -253,7 +261,7 @@ main.financial{
 }
 
 .f-matrix .row .column .b0{
-    left: 20px;
+    left: 30px;
     top: 80px;
 }
 
@@ -269,6 +277,22 @@ main.financial{
 .f-matrix .row .column .b3 {
     top: 120px;
 }
+
+.f-matrix .row .column .bt4 {
+    top: -59px;
+    left: 40%;
+}
+
+.f-matrix .row .column .bt5 {
+    top: -58px;
+    left: 82%;
+}
+
+.f-matrix .row .column .bt6 {
+    top: -61px;
+    right: -55%;
+}
+
 
 .f-matrix .row .column .q3{
     position: absolute;
