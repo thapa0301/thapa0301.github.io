@@ -86,6 +86,10 @@ h2,ul li,
 
 
 /*-----Work-Flow----*/
+.work-flow ul{
+    margin-left: -12px;
+}
+
 .work-flow ul li {
     position: relative;
     width: 100%;
