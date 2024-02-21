@@ -74,7 +74,7 @@ main.financial {
 .f-matrix .row::after {
     position: absolute;
     text-align: center;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 1rem;
     font-family: 游ゴシック;
     font-weight: 500;
@@ -157,7 +157,7 @@ main.financial {
 }
 
 .f-matrix .row .column .b3 {
-    top: 120px;
+    top: 133px;
     right: -70px;
 }
 
