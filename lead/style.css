@@ -11,13 +11,21 @@
     height: 943px;
 }
 
+.wrapper-flow h2 {
+    color: #4472C4;
+    margin: -20px 0px -1px -14px;
+    font-family: 游ゴシック;
+}
+
 .flow {
     width: 100%;
 
 }
 
-.flow h2 {
+.flow p {
     font-family: 游ゴシック;
+    font-weight: 600;
+    margin-bottom: -5px;
 }
 
 .flow ul {
