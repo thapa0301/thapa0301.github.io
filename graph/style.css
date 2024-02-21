@@ -74,7 +74,7 @@ main.financial {
 .f-matrix .row::after {
     position: absolute;
     text-align: center;
-    font-size: 11px;
+    font-size: 12px;
     line-height: 1rem;
     font-family: 游ゴシック;
     font-weight: 500;
@@ -123,7 +123,8 @@ main.financial {
 .f-matrix .row .column ul li{
     list-style: none;
     font-size: 11px;
-    font-family: 游ゴシック 本文;
+    font-family: 游ゴシック;
+    font-weight: 500;
 }
 
 .f-matrix .row .column ul li>span {
@@ -132,8 +133,8 @@ main.financial {
 
 .f-matrix .row .column ul li::before {
     content: "●";
-    font-size: 1.4rem;
-    vertical-align: sub;
+    font-size: 0.8rem;
+    vertical-align:  middle;
 }
 
 .f-matrix .row .column .q2 {
