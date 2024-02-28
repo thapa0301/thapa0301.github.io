@@ -1,225 +1,151 @@
-* {
+/* * {
     box-sizing: border-box;
-}
+} */
 
-/*------ Financial f-matrix ------*/
-
-main.financial {
+/* -----Flow------ */
+.wrapper-flow {
+    width: 1080.96px;
     margin: 5rem auto;
-    width: 1150px;
+    border: 3px solid #000;
+    padding: 30px;
+    height: 943px;
 }
 
-.bnk-name ul {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
-
-
-.chart {
-    display: flex;
-    justify-content: center;
-    gap: 10rem;
-}
-
-.chart .item {
-    width: 50%;
-}
-
-.chart h2 {
-    font-size: 16px;
-    margin: 0;
+.wrapper-flow h2 {
+    color: #4472C4;
+    margin: -20px 0px -1px -14px;
     font-family: 游ゴシック;
 }
 
-
-.f-matrix {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 1px;
-    position: relative;
-}
-
-.f-matrix::before {
-    content: "";
-    position: absolute;
-    height: 1px;
+.flow {
     width: 100%;
-    background: #fff;
-    border-top: 1px solid #000;
-    top: 50%;
-    transform: translateY(-50%);
+
 }
 
-.f-matrix::after {
-    content: "";
-    position: absolute;
-    height: 90%;
-    width: 1px;
-    background: #fff;
-    border-left: 1px solid #000;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.f-matrix .row {
-    height: 12rem;
-    display: flex;
-    justify-content: center;
-    white-space: pre;
-}
-
-.f-matrix .row::after {
-    position: absolute;
-    text-align: center;
-    font-size: 11px;
-    line-height: 1rem;
+.flow p {
     font-family: 游ゴシック;
-    font-weight: 500;
+    font-weight: 600;
+    margin-bottom: -5px;
 }
 
-/* ------ First graph axis name ------- */
-
-.f-matrix .row:nth-child(1)::after {
-    content: "金利 \A(高)";
-    left: 50%;
-    transform: translateX(-50%);
-    top: -30px;
-}
-
-.f-matrix .row:nth-child(2)::after {
-    content: "金利 \A（低）";
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -30px;
-}
-
-.f-matrix .row:nth-child(3)::after {
-    content: "LTV \A（低）";
-    top: 50%;
-    left: -40px;
-    transform: translateY(-50%);
-}
-
-.f-matrix .row:nth-child(4)::after {
-    content: "LTV \A(高)";
-    top: 50%;
-    right: -40px;
-    transform: translateY(-50%);
-}
-
-/* ------End First graph axis name */
-
-.f-matrix .row .column {
-    height: 12rem;
-    width: 100%;
+.flow ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    gap: 0;
+}
+
+
+.flow ul li.c1:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.flow ul li:is(li.c1)::after {
+    background-color: #B4C7E7;
+}
+
+.flow ul li:is(li.c2)::after {
+    background-color: #4472C4;
+}
+
+.flow ul li:is(li.c3)::after {
+    background-color: #BFBFBF;
+}
+
+.flow ul li:first-child::after {
+    -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
+}
+
+
+
+/* -----End Flow----- */
+
+
+/*-----Lead-Flow----*/
+.lead-flow ul li:first-child {
+    line-height: 1.7rem;
+}
+
+.lead-flow ul li {
     position: relative;
-}
-
-.f-matrix .row .column ul li{
-    list-style: none;
+    width: 100%;
     font-size: 11px;
-    font-family: 游ゴシック;
+    color: #fff;
+    line-height: 1.2rem;
     font-weight: 500;
+    padding-right: 30px;
+    text-align: center;
+    font-family: 游ゴシック 本文;
 }
 
-.f-matrix .row .column ul li>span {
+.lead-flow ul li::after {
+    position: absolute;
+    content: "";
+    height: 60px;
+    width: 130%;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: -1;
+    -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+/*-----End Lead flow---*/
+
+
+/*-----Work-Flow----*/
+.work-flow ul {
+    margin-left: -12px;
+}
+
+.work-flow ul li {
+    position: relative;
+    width: 100%;
+    font-size: 8px;
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    padding-right: 15px;
+    font-family: 游ゴシック 本文;
+}
+
+.work-flow ul li:is(li.c2) {
+    line-height: 1.2rem;
+}
+
+.work-flow ul li:is(li.c3) {
+    line-height: 1rem;
+}
+
+.work-flow ul li>span {
     font-family: Calibri;
 }
 
-.f-matrix .row .column ul li::before {
-    content: "●";
-    font-size: 0.8rem;
-    vertical-align:  middle;
-}
-
-.f-matrix .row .column .q2 {
+.work-flow ul li::after {
     position: absolute;
-}
-
-.f-matrix .row .column .b0 {
-    left: 35px;
-    top: 80px;
-}
-
-.f-matrix .row .column .b1 {
-    top: 0px;
-    right: -95px;
-}
-
-.f-matrix .row .column .b2 {
-    top: 50px;
-    right: -70px;
-}
-
-.f-matrix .row .column .b3 {
-    top: 133px;
-    right: -70px;
-}
-
-.f-matrix .row .column .bt4 {
-    top: -59px;
-    left: 40%;
-}
-
-.f-matrix .row .column .bt5 {
-    top: -58px;
-    left: 82%;
-}
-
-.f-matrix .row .column .bt6 {
-    top: -61px;
-    right: -55%;
-}
-
-
-.f-matrix .row .column .q3 {
-    position: absolute;
-    left: 5px;
-}
-
-.f-matrix .row .column .b4 {
-    top: 30%
-}
-
-.f-matrix .row .column .b5 {
-    top: 60%
-}
-
-
-
-/*------ second graph axis name----- */
-.chart .item:nth-child(2) .f-matrix .row:nth-child(1)::after {
-    content: "金利 \A(高)";
-    left: 50%;
-    transform: translateX(-50%);
-    top: -30px;
-    
-}
-
-.chart .item:nth-child(2) .f-matrix .row:nth-child(2)::after {
-    content: "金利 \A（低）";
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -30px;
-}
-
-.chart .item:nth-child(2) .f-matrix .row:nth-child(3)::after {
-    content: "期間 \A（短）";
+    content: "";
+    height: 40px;
+    width: 130%;
     top: 50%;
-    left: -40px;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+    z-index: -1;
+    -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
 }
 
-.chart .item:nth-child(2) .f-matrix .row:nth-child(4)::after {
-    content: "期間 \A（長）";
-    top: 50%;
-    right: -40px;
-    transform: translateY(-50%);
-}
-
-/*------ End Financial f-matrix axis name------ */
+/*-----End Work flow---*/
