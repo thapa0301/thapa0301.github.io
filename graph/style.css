@@ -5,9 +5,11 @@
 /*------ Financial f-matrix ------*/
 
 main.financial {
-    /* margin: 5rem auto; */
+
+    
+    /* margin: 5rem auto;   -> all the section comes to center     */
     width: 100%;
-    max-width: 1330px;
+    /* max-width: 1600px; -> with adjust according the screen size  */
 }
 
 .bnk-name ul {
