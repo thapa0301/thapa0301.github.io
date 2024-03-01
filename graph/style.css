@@ -5,8 +5,6 @@
 /*------ Financial f-matrix ------*/
 
 main.financial {
-
-    
     /* margin: 5rem auto;   -> all the section comes to center     */
     width: 100%;
     /* max-width: 1600px; -> with adjust according the screen size  */
@@ -31,18 +29,22 @@ main.financial {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    gap: 10rem;
-    padding: 3rem;
+    gap: 12rem;
+    padding: 4.5rem 3.5rem;
 }
 
 .chart .item {
     width: 50%;
+    position: relative;
 }
 
 .chart h2 {
-    font-size: 16px;
+    font-size: 16pt;
     margin: 0;
     font-family: 游ゴシック;
+    position: absolute;
+    top: -10px;
+    left: 10px;
 }
 
 
@@ -83,7 +85,7 @@ main.financial {
 }
 
 .f-matrix .row {
-    height: 12rem;
+    height: 17rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -96,8 +98,7 @@ main.financial {
 .f-matrix .row::after {
     position: absolute;
     text-align: center;
-    font-size: 11px;
-    line-height: 1rem;
+    font-size: 11pt;
     font-family: 游ゴシック;
     font-weight: 500;
 }
@@ -110,7 +111,7 @@ main.financial {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    top: -30px;
+    top: -35px;
 }
 
 .f-matrix .row:nth-child(2)::after {
@@ -119,13 +120,13 @@ main.financial {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    bottom: -30px;
+    bottom: -35px;
 }
 
 .f-matrix .row:nth-child(3)::after {
     content: "LTV \A（低）";
     top: 50%;
-    left: -40px;
+    left: -45px;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -134,7 +135,7 @@ main.financial {
 .f-matrix .row:nth-child(4)::after {
     content: "LTV \A(高)";
     top: 50%;
-    right: -40px;
+    right: -45px;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -156,7 +157,7 @@ main.financial {
 
 .f-matrix .row .column ul li {
     list-style: none;
-    font-size: 11px;
+    font-size: 11pt;
     font-family: 游ゴシック;
     font-weight: 500;
 }
@@ -167,7 +168,7 @@ main.financial {
 
 .f-matrix .row .column ul li::before {
     content: "●";
-    font-size: 0.65rem;
+    font-size: 0.9rem;
     vertical-align: middle;
 }
 
@@ -176,38 +177,38 @@ main.financial {
 }
 
 .f-matrix .row .column .b0 {
-    left: 30%;
-    top: 80px;
+    left: 89px;
+    top: 136px;
 }
 
 .f-matrix .row .column .b1 {
-    top: 0px;
-    right: -130px;
+    top: 20px;
+    right: -169px;
 }
 
 .f-matrix .row .column .b2 {
-    top: 50px;
-    right: -108px;
+    top: 87px;
+    right: -140px;
 }
 
 .f-matrix .row .column .b3 {
-    top: 133px;
-    right: -110px;
+    top: 198px;
+    right: -142px;
 }
 
 .f-matrix .row .column .bt4 {
-    top: -59px;
-    right: 15px;
+    top: -55px;
+    right: 60px;
 }
 
 .f-matrix .row .column .bt5 {
-    top: -58px;
+    top: -52px;
     right: -80px;
 }
 
 .f-matrix .row .column .bt6 {
-    top: -61px;
-    right: -170px;
+    top: -58px;
+    right: -214px;
 }
 
 
@@ -217,11 +218,11 @@ main.financial {
 }
 
 .f-matrix .row .column .b4 {
-    top: 33%
+    top: 45%
 }
 
 .f-matrix .row .column .b5 {
-    top: 60%
+    top: 80%
 }
 
 
@@ -233,7 +234,7 @@ main.financial {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    top: -30px;
+    top: -35px;
 
 }
 
@@ -243,13 +244,13 @@ main.financial {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    bottom: -30px;
+    bottom: -35px;
 }
 
 .chart .item:nth-child(2) .f-matrix .row:nth-child(3)::after {
     content: "期間 \A（短）";
     top: 50%;
-    left: -40px;
+    left: -45px;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -258,7 +259,7 @@ main.financial {
 .chart .item:nth-child(2) .f-matrix .row:nth-child(4)::after {
     content: "期間 \A（長）";
     top: 50%;
-    right: -40px;
+    right: -45px;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
