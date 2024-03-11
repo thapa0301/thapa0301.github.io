@@ -1,13 +1,9 @@
-/* * {
-    box-sizing: border-box;
-}
- */
+
 /*------ Financial f-matrix ------*/
 
 main.financial {
-    /* margin: 5rem auto;   -> all the section comes to center     */
     width: 100%;
-    /* max-width: 1600px; -> with adjust according the screen size  */
+    margin:0 auto;
 }
 
 .bnk-name ul {
@@ -19,8 +15,6 @@ main.financial {
     justify-content: center;
     gap: 2rem;
 }
-
-
 
 .chart {
     display: -webkit-box;
@@ -176,53 +170,77 @@ main.financial {
     position: absolute;
 }
 
-.f-matrix .row .column .b0 {
-    left: 89px;
-    top: 136px;
-}
-
-.f-matrix .row .column .b1 {
-    top: 20px;
-    right: -169px;
-}
-
-.f-matrix .row .column .b2 {
-    top: 87px;
-    right: -140px;
-}
-
-.f-matrix .row .column .b3 {
-    top: 198px;
-    right: -142px;
-}
-
-.f-matrix .row .column .bt4 {
-    top: -55px;
-    right: 60px;
-}
-
-.f-matrix .row .column .bt5 {
-    top: -52px;
-    right: -80px;
-}
-
-.f-matrix .row .column .bt6 {
-    top: -58px;
-    right: -214px;
-}
-
-
 .f-matrix .row .column .q3 {
     position: absolute;
     left: 12%
 }
 
+.chart {
+    gap: 10rem;
+}
+
+.chart h2 {
+    font-size: 0.8rem;
+}
+
+.f-matrix .row {
+    height: 12rem;
+}
+
+.f-matrix .row::after {
+    font-size: 0.6rem;
+}
+
+.f-matrix .row .column ul li {
+    font-size: 0.6rem;
+}
+
+.f-matrix .row .column ul li::before {
+    font-size: 0.6rem;
+}
+
+/* ---List of banks----- */
+.f-matrix .row .column .b3 {
+    top: 9rem;
+    right: -6.8rem;
+}
+
+.f-matrix .row .column .b0 {
+    left: 4rem;
+    top: 6.5rem;
+}
+
+.f-matrix .row .column .b2 {
+    top: 4.3rem;
+    right: -6.8rem;
+}
+
+.f-matrix .row .column .b1 {
+    top: 1rem;
+    right: -8rem;
+}
+
 .f-matrix .row .column .b4 {
-    top: 45%
+    top: 40%;
 }
 
 .f-matrix .row .column .b5 {
-    top: 80%
+    top: 64%;
+}
+
+.f-matrix .row .column .bt6 {
+    top: -3.4rem;
+    right: -9.5rem;
+}
+
+.f-matrix .row .column .bt5 {
+    top: -3.2rem;
+    right: -4rem;
+}
+
+.f-matrix .row .column .bt4 {
+    top: -3.3rem;
+    right: 1.3rem;
 }
 
 
@@ -266,3 +284,167 @@ main.financial {
 }
 
 /*------ End Financial f-matrix axis name------ */
+
+
+
+/* ---------- for larger screens ----------- */
+
+@media (min-width: 1280px) {
+    main.financial {
+        max-width: 1240px;
+    }  
+}
+
+@media (min-width: 1440px) {
+    
+    main.financial {
+        max-width: 1420px;
+    }
+
+    .chart {
+        gap: 12rem;
+    }
+
+    .chart h2 {
+        font-size: 16pt;
+    }
+
+    .f-matrix .row {
+        height: 17rem;
+    }
+
+    .f-matrix .row::after {
+        font-size: 11pt;
+    }
+
+    .f-matrix .row .column ul li {
+        font-size: 11pt;
+    }
+
+    .f-matrix .row .column ul li::before {
+        font-size: 0.rem;
+    }
+
+    /* ---List of banks----- */
+    .f-matrix .row .column .b0 {
+        left: 5.56rem;
+        top: 10.56rem;
+    }
+
+    .f-matrix .row .column .b1 {
+        top: 1.25rem;
+        right: -10.56rem;
+    }
+
+    .f-matrix .row .column .b2 {
+        top: 5.438rem;
+        right: -8.75rem;
+    }
+
+    .f-matrix .row .column .b3 {
+        top: 12.375rem;
+        right: -8.87rem;
+    }
+
+    .f-matrix .row .column .bt4 {
+        top: -3.43rem;
+        right: 3.75rem;
+    }
+
+    .f-matrix .row .column .bt5 {
+        top: -3.2rem;
+        right: -80px;
+    }
+
+    .f-matrix .row .column .bt6 {
+        top: -3.6rem;
+        right: -13.37rem;
+    }
+
+    .f-matrix .row .column .b4 {
+        top: 45%
+    }
+
+    .f-matrix .row .column .b5 {
+        top: 80%
+    }
+}
+
+@media (min-width: 1920px) {
+    main.financial {
+        max-width: 1820px;
+    }
+
+    .chart {
+        gap: 12rem;
+    }
+
+    .chart h2 {
+        font-size: 16pt;
+    }
+
+    .f-matrix .row {
+        height: 17rem;
+    }
+
+    .f-matrix .row::after {
+        font-size: 11pt;
+    }
+
+    .f-matrix .row .column ul li {
+        font-size: 11pt;
+    }
+
+    .f-matrix .row .column ul li::before {
+        font-size: 0.rem;
+    }
+
+    /* ---List of banks----- */
+    .f-matrix .row .column .b0 {
+        left: 5.56rem;
+        top: 10.56rem;
+    }
+
+    .f-matrix .row .column .b1 {
+        top: 1.25rem;
+        right: -10.56rem;
+    }
+
+    .f-matrix .row .column .b2 {
+        top: 5.438rem;
+        right: -8.75rem;
+    }
+
+    .f-matrix .row .column .b3 {
+        top: 12.375rem;
+        right: -8.87rem;
+    }
+
+    .f-matrix .row .column .bt4 {
+        top: -3.43rem;
+        right: 3.75rem;
+    }
+
+    .f-matrix .row .column .bt5 {
+        top: -3.2rem;
+        right: -80px;
+    }
+
+    .f-matrix .row .column .bt6 {
+        top: -3.6rem;
+        right: -13.37rem;
+    }
+
+
+
+    .f-matrix .row .column .b4 {
+        top: 45%
+    }
+
+    .f-matrix .row .column .b5 {
+        top: 80%
+    }
+
+
+
+}
