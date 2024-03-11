@@ -87,6 +87,12 @@
     font-family: 游ゴシック 本文;
 }
 
+.lead-flow ul li span{
+    z-index: 100;
+    display: block;
+    position: relative;
+}
+
 .lead-flow ul li::after {
     position: absolute;
     content: "";
@@ -97,7 +103,7 @@
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    z-index: -1;
+    z-index: 10;
     -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
 }
@@ -129,8 +135,14 @@
     line-height: 1rem;
 }
 
-.work-flow ul li>span {
+.work-flow ul li span .diff-font {
     font-family: Calibri;
+    display: inline-block;
+}
+
+.work-flow ul li> span {
+    z-index: 100;
+    position: relative;
 }
 
 .work-flow ul li::after {
@@ -143,7 +155,7 @@
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    z-index: -1;
+    z-index: 10;
     -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
 }
