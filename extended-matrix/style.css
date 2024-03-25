@@ -1,0 +1,100 @@
+#screen1{
+    position: relative;
+}
+
+#screen1::before,
+#screen2::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0.01px;
+    background-color: #000;
+    border-top: 0.5px solid #000;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#screen1::after,
+#screen2::after{
+    position: absolute;
+    content: "";
+    width: 0.01px;
+    height: 100%;
+    background-color: #000;
+    border-left: 0.5px solid #000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.extend-matrix{
+    width: 90%;
+    margin: 3rem auto;
+
+}
+.extend-matrix .em-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,  1fr);
+    gap: 0.05rem;
+   /*  background-color: #000; */
+    border: 1px solid rgb(128, 128, 128);
+}
+
+.extend-matrix .em-wrapper .btn-item{
+    display: flex;
+    justify-content: center;
+    align-items:last baseline;
+    background-color: #fff;
+    height: 40vh;
+    cursor: pointer;
+}
+
+.extend-matrix .em-wrapper .btn-item>span{
+    font-size: 2rem;
+    font-weight: 800;
+    padding: 2rem;
+}
+
+.extend-matrix .em-wrapper .btn1{
+    background-color: #FFAB40;
+}
+
+.extend-matrix .em-wrapper .active{
+    background-color: #FFAB40;
+}
+
+/* .extend-matrix .em-wrapper .btn-item:hover{
+    background-color: #FFAB40;
+} */
+
+
+
+/* ----- Screen 2----- */
+#screen2 .btn-item {
+    cursor: unset;
+    font-size: 2rem;
+    font-weight: 800;
+    background-color: #FFAB40;
+    align-items: last baseline;
+}
+
+#screen2{
+    display: none;
+    position: relative;
+}
+
+#screen2 button{
+    height: 22vh;
+    width: 22vh;
+    border-radius: 50%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    font-size: 1.6rem;
+    z-index: 100;
+}
+
+
+
