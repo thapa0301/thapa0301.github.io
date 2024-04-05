@@ -15,7 +15,7 @@ cButton.forEach((btn) =>{
 
         switch (boxValue) {
             case "A":
-                bankName = ["●横浜銀行<br>I:1.6％、L:90％", "●三井トラスト銀行<br/>I:3.9％、L:100％", "●静岡銀行<br/>I:3.3％、L:100％", ""];
+                bankName = ["●<span>横浜銀行</span><br>I:1.6％、L:90％", "<span>●三井トラスト銀行</span><br/>I:3.9％、L:100％", "●<span>静岡銀行</span><br/>I:3.3％、L:100％", ""];
                 arrValue = ["A1", "A2", "A3", "A4"];
                 clickCenterBtn();
                 break;
