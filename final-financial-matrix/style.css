@@ -152,14 +152,19 @@
 }
 
 .f-matrix .row .column ul li {
-    list-style: none;
-    font-size: 11pt;
+    list-style: none; 
     font-family: 游ゴシック;
-    font-weight: 500;
 }
 
-.f-matrix .row .column ul li>span {
-    font-family: Calibri;
+.f-matrix .row .column ul li .b-name{
+    font-family: 游ゴシック;
+    font-weight: 800;
+    font-size: 0.6rem;
+}
+
+.f-matrix .row .column ul li .b-per {
+    font-family: Calibri!important;
+    font-size: 0.8rem;
 }
 
 .f-matrix .row .column li {
@@ -300,19 +305,6 @@
     height: 40vh;
 }
 
-#screen2 .btn-item span {
-    font-weight: 800;
-}
-
-#screen2 .btn-item span,
-#screen2 button {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 1rem;
-    font-size: clamp(1.8rem, 2vw + 0.75rem, 2.6rem);
-}
-
 #screen2 .btn-item .bankName {
     font-size: clamp(.6rem, 2vw + 0.75rem, 1rem);
     font-weight: 500;
@@ -329,20 +321,51 @@
     position: absolute;
 }
 
+#screen2 .btn-item .change,
+#screen2 button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1rem;
+    font-size: clamp(1.8rem, 2vw + 0.75rem, 2.6rem);
+}
+
+
+
+/* ------- Screen 2 Bank List Name -------- */
+#screen2 .btn-item .bankName span{
+    font-weight: 600;
+}
 #screen2 .btn-item:first-child .bankName {
     top: 20%;
     left: 25%;
+}
+#screen2 .btn-item:first-child .bankName span,
+.f-matrix .row .column li:nth-child(1) .b-name{
+    color: #ff0000;
 }
 
 #screen2 .btn-item:nth-child(2) .bankName {
     top: 40%;
     left: 40%;
 }
+#screen2 .btn-item:nth-child(2) .bankName span,
+.f-matrix .row .column li:nth-child(2) .b-name {
+    color: #1e0c85;
+}
 
 #screen2 .btn-item:nth-child(3) .bankName {
     top: 12%;
     left: 53%;
 }
+#screen2 .btn-item:nth-child(3) .bankName span,
+.f-matrix .row .column li:nth-child(3) .b-name {
+    color: #ffe100;
+}
+/* ------- End Screen 2 Bank List Name -------- */
+
+
+
 
 /* ---center middle Button-- */
 #screen2 button {
