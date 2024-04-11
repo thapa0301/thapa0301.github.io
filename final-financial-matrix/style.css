@@ -261,7 +261,7 @@
 }
 
 #screen2 .hidden-screen {
-    width: 90%;
+    width: 85%;
     position: relative;
     margin: 0 auto;
 }
@@ -288,13 +288,12 @@
     transform: translate(-50%, -50%);
 }
 
-
-
 #screen2 .em-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.05rem;
     border: 1px solid rgb(128, 128, 128);
+    position: relative;
 }
 
 #screen2 .em-wrapper .btn-item {
@@ -382,8 +381,67 @@
     border: 2px solid #000;
     font-weight: 400;
 }
-
 /* ----End Center Middle Button----- */
+
+
+/* -------- Axis of the second-screen---- */
+#screen2 .first-axis,
+#screen2 .second-axis{
+    font-family: 游ゴシック;;
+    font-size: 0.8rem;
+    position: absolute;
+}
+
+#screen2 .first-axis-a,
+#screen2 .first-axis-e{
+    left: -5%;
+    bottom: 0;
+}
+#screen2 .second-axis-a,
+#screen2 .second-axis-e{
+    right: 0;
+    top: -5%;
+}
+
+#screen2 .first-axis-b,
+#screen2 .first-axis-f{
+    bottom:0;
+    right: -5%;
+}
+#screen2 .second-axis-b,
+#screen2 .second-axis-f{
+    top: -5%;
+    left: 0;
+}
+
+#screen2 .first-axis-c,
+#screen2 .first-axis-g{
+    top: 0;
+    left: -5%;
+}
+#screen2 .second-axis-c,
+#screen2 .second-axis-g{
+    right: 0;
+    bottom: -5%;
+}
+
+#screen2 .first-axis-d,
+#screen2 .first-axis-h{
+    bottom: -5%;
+    left: 0;
+}
+#screen2 .second-axis-d,
+#screen2 .second-axis-h{
+    top: -5%;
+    right: 0;
+}
+
+
+
+
+
+
+/* --------- End Axis of the second-screen----- */
 
 /*############ End Screen 2 ########### */
 
