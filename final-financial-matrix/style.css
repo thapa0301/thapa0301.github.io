@@ -260,6 +260,23 @@
     display: none;
 }
 
+/*  .show{
+    display: block;
+    animation: showtime 1s both;
+    transform-origin: top left;
+}
+
+@keyframes showtime {
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+} */
+
 #screen2 .hidden-screen {
     width: 85%;
     position: relative;
@@ -405,13 +422,13 @@
 
 #screen2 .first-axis-b,
 #screen2 .first-axis-f{
-    bottom:0;
-    right: -5%;
+    top: -5%;
+    left: 0;
 }
 #screen2 .second-axis-b,
 #screen2 .second-axis-f{
-    top: -5%;
-    left: 0;
+    bottom: 0;
+    right: -5%;
 }
 
 #screen2 .first-axis-c,
