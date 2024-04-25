@@ -259,6 +259,9 @@
 /*############ Screen 2 ########### */
 #screen2 {
     display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
 }
 
 /*  .show{
